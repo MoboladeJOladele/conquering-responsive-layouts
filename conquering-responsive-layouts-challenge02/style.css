@@ -55,14 +55,14 @@ p {
 
 .wrapper {
   inline-size: 80%;
-  max-inline-size: 750px;
+  max-inline-size: 46rem;
   margin-inline: auto;
 }
 
 .intro {
   color: white;
   background: #23424a;
-  padding-block: 4rem;
+  padding-block: 4em;
 }
 
 .intro-content {
@@ -70,5 +70,5 @@ p {
 }
 
 main {
-  padding-block-end: 2.5rem;
+  padding-block-end: 2.5em;
 }
