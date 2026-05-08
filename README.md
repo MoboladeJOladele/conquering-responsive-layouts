@@ -20,7 +20,7 @@ This challenge focuses on:
 Here are the live sites for each completed challenge:
 
 ### Day 1
-🔗 [View Project](https://dancing-marshmallow-9098e8.netlify.app/challenge01/responsive-version/)
+🔗 [View Project]([https://dancing-marshmallow-9098e8.netlify.app/challenge01/responsive-version/](https://dancing-marshmallow-9098e8.netlify.app/challenge01/responsive-version.html))
 
 ---
 
