@@ -26,11 +26,23 @@ Here are the live sites for each completed challenge:
 
 ---
 
+### Day 2
+No coding challenge was provided for this day.  
+Focused on learning responsive design concepts and Flexbox fundamentals.
+
+---
+
+### Day 3
+- 🔗 [Responsive Version](https://conquering-responsive-layouts.pages.dev/challenge02/responsive-version.html)
+- 🔗 [Broken Version](https://conquering-responsive-layouts.pages.dev/challenge02/broken-version.html)
+
+---
+
 ## Progress Tracker
 
 - [x] Day 1
-- [ ] Day 2
-- [ ] Day 3
+- [x] Day 2
+- [x] Day 3
 - [ ] Day 4
 - [ ] Day 5
 - [ ] Day 6
