@@ -28,7 +28,7 @@ Here are the live sites for each completed challenge:
 
 ### Day 2
 No coding challenge was provided for this day.  
-Focused on learning responsive design concepts and Flexbox fundamentals.
+Focused on learning CSS units, including relative and fixed units.
 
 ---
 
