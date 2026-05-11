@@ -1,0 +1,50 @@
+:root {
+    --font-body: 'Roboto', sans-serif;
+}
+
+.main-heading {
+    font-size: var(--step-4);
+    margin-block-end: 2rem;
+}
+
+.main-heading + p {
+    opacity: 72%;
+    margin-block-end: 3.6rem;
+}
+
+.hero {
+    background-color: #23424a;
+    padding-block: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
+    padding-inline: clamp(3.375rem, 2.7102rem + 2.9545vw, 5rem);
+}
+
+.hero__wrapper {
+    width: min(100%, 48rem);
+}
+
+.clr-white {
+    color: #fff;
+}
+
+.call-to-action {
+    background-color: #38cfd9;
+    border-radius: 100vw;
+    color: #072A2D;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.8rem 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none;
+}
+
+.call-to-action:visited {
+    color: white;
+}
+
+.call-to-action:hover,
+.call-to-action:focus-visible {
+    color: white;
+    outline: 3px solid white;
+    outline-offset: 0.01rem;
+}
