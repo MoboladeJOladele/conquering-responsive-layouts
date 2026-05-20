@@ -27,26 +27,52 @@ Here are the live sites for each completed challenge:
 ---
 
 ### Day 2
+
 No coding challenge was provided for this day.  
 Focused on learning CSS units, including relative and fixed units.
 
 ---
 
 ### Day 3
+
 - 🔗 [Responsive Version](https://conquering-responsive-layouts.pages.dev/challenge02/responsive-version.html)
 - 🔗 [Broken Version](https://conquering-responsive-layouts.pages.dev/challenge02/broken-version.html)
 
 ---
 
 ### Day 4
+
 No coding challenge was provided for this day.  
 Focused on additional CSS units: `vw`, `vh`, `vmin`, and `vmax`.
 
 ---
 
 ### Day 5
-Built from scratch — no starter files or broken version provided.  
+
+Built from scratch — no starter files or broken version provided.
+
 - 🔗 [Live Project](https://conquering-responsive-layouts.pages.dev/challenge03/)
+
+---
+
+### Day 6
+
+No coding challenge was provided for this day.  
+Focused on understanding the difference between `width` and `max-width`, and how they affect responsive layouts.
+
+---
+
+### Day 7
+
+Review day covering concepts from the previous week, including responsive units, layout behavior, and container sizing.
+
+---
+
+### Day 8
+
+Introduction to Flexbox and its core layout concepts.
+
+- 🔗 [Flexbox Challenge Project](https://conquering-responsive-layouts.pages.dev/flexbox/challenge01/)
 
 ---
 
@@ -57,9 +83,9 @@ Built from scratch — no starter files or broken version provided.
 - [x] Day 3  
 - [x] Day 4  
 - [x] Day 5  
-- [ ] Day 6  
-- [ ] Day 7  
-- [ ] Day 8  
+- [x] Day 6  
+- [x] Day 7  
+- [x] Day 8  
 - [ ] Day 9  
 - [ ] Day 10  
 - [ ] Day 11  
