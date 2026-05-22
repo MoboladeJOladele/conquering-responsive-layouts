@@ -14,26 +14,26 @@
  *
  */
 
-.intro {
-    background: #23424a;
-    color: white;
-    padding-block: 3.125rem; 
-    margin-block-end: 2.8rem; 
-} 
-
-.intro-content {
-    inline-size: 50%;
+body {
+    margin-block-end: var(--space-2xl);
 }
 
-.wrapper {
+.container {
     inline-size: min(80%, 46.875rem);
     margin-inline: auto;
 }
 
+.intro {
+    background: #23424a;
+    color: white;
+    padding-block: var(--space-2xl); 
+    margin-block-end: var(--space-2xl); 
+} 
+
 h1, h2 {
-    margin-block-end: 0.8rem;
+    margin-block-end: var(--space-xs);
 }
 
-body {
-    margin-block-end: 2.8rem;
+.intro-content {
+    inline-size: 50%;
 }

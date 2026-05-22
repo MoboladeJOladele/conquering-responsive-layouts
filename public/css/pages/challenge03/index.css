@@ -1,46 +1,38 @@
-:root {
-    --font-body: 'Roboto', sans-serif;
-}
-
-h1 {
-    font-size: var(--step-4);
-    margin-block-end: 2rem;
-}
-
-h1 + p {
-    opacity: 72%;
-    margin-block-end: 3.6rem;
-}
-
 .hero {
     background-color: #23424a;
     color: #fff;
-    padding-block: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
-    padding-inline: clamp(3.375rem, 2.7102rem + 2.9545vw, 5rem);
+    padding-block: var(--space-3xl);
+    padding-inline: var(--space-2xl);
 }
 
-.hero__text {
+.hero__wrapper {
     width: min(100%, 48rem);
 }
 
-.call-to-action {
+.hero__title {
+    font-size: var(--step-4);
+    margin-block-end: var(--space-l);
+}
+
+.hero__text {
+    opacity: 0.8;
+    margin-block-end: var(--space-xl);
+}
+
+.btn {
+    display: inline-block;
     background-color: #38cfd9;
     border-radius: 100vw;
     color: #072A2D;
-    display: inline-block;
-    font-weight: 700;
-    padding: 0.8rem 1.6rem;
+    font-weight: 900;
+    padding: var(--space-xs) var(--space-l);
     text-transform: uppercase;
     text-decoration: none;
     transition: none;
 }
 
-.call-to-action:visited {
-    color: white;
-}
-
-.call-to-action:hover,
-.call-to-action:focus-visible {
+.btn:hover,
+.btn:focus-visible {
     color: white;
     outline: 3px solid white;
     outline-offset: 0.01rem;
