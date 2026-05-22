@@ -72,7 +72,7 @@ Review day covering concepts from the previous week, including responsive units,
 
 Introduction to Flexbox and its core layout concepts.
 
-- 🔗 [Flexbox Challenge Project](https://conquering-responsive-layouts.pages.dev/flexbox/challenge01/)
+- 🔗 [Flexbox Challenge Project](https://conquering-responsive-layouts.pages.dev/flexbox-challenge01/)
 
 ---
 
