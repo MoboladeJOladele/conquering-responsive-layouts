@@ -8,10 +8,15 @@
 .intro {
     background-color: var(--clr-prim-green);
     color: white;
-    padding: var(--space-3xl);
+}
+
+.container {
+    width: min(80%, 80rem);
+    margin-inline: auto;
 }
 
 .intro__content {
+    padding-block: var(--space-3xl);
     width: min(100%, 44rem);
 }
 
@@ -46,11 +51,8 @@
 
 .benefits__title {
     color: var(--clr-prim-green);
-    font-size: var(--step-2);
     margin-block-start: var(--space-2xl);
-    margin-inline: auto;
     text-transform: uppercase;
-    width: min(80%, 80rem);
 }
 
 .benefits__list {
@@ -58,8 +60,10 @@
     flex-wrap: wrap;
     gap: var(--space-xl) var(--space-m);
     padding-block: var(--space-2xl);
-    width: min(80%, 80rem);
-    margin-inline: auto;
+}
+
+.benefits__list--primary h3 {
+    color: var(--clr-violet-accent);
 }
 
 .benefits__list__wrapper {
@@ -67,12 +71,9 @@
     color: #fff;
 }
 
-.benefits__list--primary h3 {
-    color: var(--clr-violet-accent);
-}
-
 .benefits__item {
-    flex: 1 1 16rem;
+    flex-grow: 1;
+    width: 16rem;
     text-align: center;
 }
 
