@@ -76,6 +76,22 @@ Introduction to Flexbox and its core layout concepts.
 
 ---
 
+### Day 9
+
+A deeper dive into Flexbox and responsive layout structure.
+
+Topics covered:
+
+- Reducing unnecessary HTML
+- Creating responsive hero sections
+- Working with column widths using Flexbox
+- Keeping images responsive
+- Building more flexible layouts with Flexbox
+
+- 🔗 [Flexbox Challenge #2](https://conquering-responsive-layouts.pages.dev/flexbox-challenge02/)
+
+---
+
 ## Progress Tracker
 
 - [x] Day 1  
@@ -86,7 +102,7 @@ Introduction to Flexbox and its core layout concepts.
 - [x] Day 6  
 - [x] Day 7  
 - [x] Day 8  
-- [ ] Day 9  
+- [x] Day 9  
 - [ ] Day 10  
 - [ ] Day 11  
 - [ ] Day 12  
