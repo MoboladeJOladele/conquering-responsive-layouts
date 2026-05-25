@@ -1,0 +1,35 @@
+/* ---------- Media ---------- */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+img {
+    background-color: var(--lqip, var(--lqip-fallback));
+}
+
+/* ---------- Links ---------- */
+
+a {
+    transition: color 0.2s ease-in-out;
+}
+
+/* ---------- Form Elements ---------- */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* ---------- Buttons ---------- */
+
+button {
+    cursor: pointer;
+}

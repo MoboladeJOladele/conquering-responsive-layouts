@@ -11,32 +11,6 @@ html {
     margin: 0;
 }
 
-/* ---------- Media ---------- */
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-/* ---------- Form Elements ---------- */
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-/* ---------- Buttons ---------- */
-
-button {
-    cursor: pointer;
-}
-
 /* ---------- Lists ---------- */
 
 ul,
