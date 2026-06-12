@@ -1,0 +1,22 @@
+.flex,
+.inline-flex {
+  --gap: 1rem;
+  --direction: row;
+  --align: center;
+  --justify: flex-start;
+  --wrap: nowrap;
+
+  gap: var(--gap);
+  flex-direction: var(--direction);
+  align-items: var(--align);
+  justify-content: var(--justify);
+  flex-wrap: var(--wrap);
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}

@@ -1,0 +1,18 @@
+.grid {
+  --gap: 1rem;
+  --grid-cols: auto;
+  --grid-rows: auto;
+
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: var(--grid-cols);
+  grid-template-rows: var(--grid-rows);
+}
+
+.grid > * {
+  --col-span: 1;
+  --row-span: 1;
+
+  grid-column: span var(--col-span);
+  grid-row: span var(--row-span);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="/favicon.ico">
+        <title>Conquering Responsive Layouts</title>
+
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/fonts/playfair-display.css">
+        <link rel="stylesheet" href="/css/fonts/roboto.css">
+        <link rel="stylesheet" href="/css/pages/flexbox-challenge04/index.css">
+    </head>
+
+    <body>
+        <main>
+            <section class="[ hero ] [ text-center ]" aria-labelledby="hero__title">
+                <div class="[ wrapper ] [ flow ]">
+                    <p class="[ hero__text ] [ uppercase ]">Lorem ipsum sit</p>
+                    <h1 id="hero__title">Responsive layouts don’t have to be a struggle</h1>
+                </div>
+            </section>
+
+            <section aria-labelledby="quality-designs__label" class="[ quality-designs ] [ padding-block-2xl ]">
+                <div class="wrapper">
+                    <h2 id="quality-designs__label" class="[ text-center ]">Quality Designs</h2>
+                    <div class="group">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Dui vivamus arcu felis bibendum ut
+                        tristique. Arcu dui vivamus arcu felis. Sociis natoque
+                        penatibus et magnis dis. </p>
+                        <p>Felis donec et odio pellentesque diam volutpat. Aliquam
+                        purus sit amet luctus venenatis. Turpis in eu mi
+                        bibendum neque egestas congue quisque egestas.
+                        Pellentesque sit amet porttitor eget dolor morbi non.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="custom-designs padding-block-2xl">
+                <div class="wrapper">
+                    <div data-state="flipped" class="group">
+                        <img 
+                            src="image-01.jpg" style="--lqip: #7b534b" 
+                            width="444" height="277" 
+                            decoding="async" loading="lazy" 
+                            alt=""
+                        >
+                        <div>
+                            <h2 class="group__title">Made custom for you</h2>
+                            <p  class="group__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam.</p>                        
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+            
+            <section class="made-carefully padding-block-2xl">
+                <div class="wrapper">
+                    <div class="group">
+                        <img 
+                            src="image-02.jpg" style="--lqip: #8e654f" 
+                            width="444" height="278" 
+                            decoding="async" loading="lazy" 
+                            alt=""
+                        >
+                        <div>
+                            <h2 class="group__title">Created with care</h2>
+                            <p class="group__text">Felis donec et odio pellentesque diam volutpat. Aliquam
+                            purus sit amet luctus venenatis. Turpis in eu mi
+                            bibendum neque egestas congue quisque egestas.
+                            Pellentesque sit amet porttitor eget dolor morbi non.</p>              
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

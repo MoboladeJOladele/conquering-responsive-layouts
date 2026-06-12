@@ -1,17 +1,14 @@
 .hero {
     background-color: #23424a;
     color: #fff;
-    padding-block: var(--space-3xl);
-    padding-inline: var(--space-2xl);
 }
 
 .hero__wrapper {
-    width: min(100%, 48rem);
+    max-inline-size: 48rem;
 }
 
 .hero__title {
-    font-size: var(--step-4);
-    margin-block-end: var(--space-l);
+    margin-block-end: var(--space-m);    
 }
 
 .hero__text {
@@ -21,12 +18,12 @@
 
 .btn {
     background-color: #38CFD9;
-    border-radius: 100vw;
+    border-radius: 100vmax;
     color: #3A3A3A;
     display: inline-block;
-    font-weight: 900;
-    text-decoration: none;
+    font-weight: 700;
     text-transform: uppercase;
+    text-decoration: none;
     transition: none;
     padding: .8em 1.6em;
 }

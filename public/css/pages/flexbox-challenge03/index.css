@@ -1,0 +1,126 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+   1. Get all the navigation items next to one another
+   2. Add a space between all the items
+*/
+
+header {
+    background-color: #136c72;
+}
+
+.logo {
+    background-image: url(/crl-logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    block-size: 1.875rem;
+    inline-size: 3.4375rem;
+}
+
+h1 {
+    margin-block-end: 0.64em;
+}
+
+.nav {
+    flex: 1;
+}
+
+.nav__list {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.nav__list--primary {
+    margin-inline: auto;
+}
+
+.nav__link {
+    color: #fff;
+}
+
+.nav__link, 
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__link:hover,
+.nav__link:focus-visible,
+.btn:hover,
+.btn:focus-visible {
+    opacity: .8; 
+}
+
+.nav__link[aria-current="page"] {
+    font-weight: 700;
+    opacity: 0.65;
+    pointer-events: none;
+}
+
+.nav__link--button {
+    background-color: #fff;
+    color: #136c72;
+    padding: .32em 2em;
+}
+
+.btn {
+    background-color: #38CFD9;
+    border-radius: 100vw;
+    color: #23424A;
+    display: inline-block;
+    font-weight: 700;
+    padding: .8em 2em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    inline-size: min(80%, 68.75rem);
+    padding: 0;
+}
+
+.hero {
+    background-color: #23424A;
+    color: #FFF;
+    margin-block-end: 6rem;
+    padding-block: 6rem;
+}
+
+.hero__content,
+.primary-content { 
+    inline-size: 62%;
+}
+
+.hero__img,
+.sidebar {
+    inline-size: 32%;
+}
+
+.hero__text {
+    margin-block-end: 3em;
+}
+
+.primary-content__title {
+    color: #87629A;
+    margin-block-end: var(--space-m);
+}
+
+.sidebar {
+    background-color: #136c72;
+    color: #fff;
+    padding: 2rem 1.6rem;
+}
+
+.benefits__list {
+    --flow-space: var(--space-m);
+}
+
+.benefits__list__title {
+    margin-block-end: 0.4em;
+}

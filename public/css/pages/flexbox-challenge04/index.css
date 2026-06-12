@@ -1,0 +1,61 @@
+:root {
+    --clr-off-black: #222C2A;
+    --clr-off-brown: #824936;
+    --clr-off-yellow: #F3EED9;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display';
+}
+
+.hero {
+    background-color: var(--clr-off-yellow);
+    padding-block: 8.8rem;
+}
+
+#hero__title {
+    color: var(--clr-off-brown);
+}
+
+.hero__text {
+    opacity: 0.8;
+    letter-spacing: 4px;
+}
+
+.group {
+    --gap: var(--space-xl);
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.group[data-state="flipped"] {
+    flex-direction: row-reverse;
+}
+
+.group > * {
+    flex: calc(28rem - var(--gap));
+}
+
+.quality-designs h2 {
+    color: var(--clr-off-brown);
+    margin-block-end: var(--space-l);
+}
+
+.custom-designs {
+    background-color: var(--clr-off-black);
+}
+
+.made-carefully {
+    background-color: var(--clr-off-brown);
+}
+
+.group__title {
+    color: var(--clr-off-yellow);
+    margin-block-end: var(--space-xs);
+}
+
+.group__text {
+    color: white;
+}

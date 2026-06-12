@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>Conquering Responsive Layouts</title>
+    
+    <link rel="stylesheet" href="/css/styles.css">    
+    <link rel="stylesheet" href="/css/fonts/roboto.css" />
+    <link rel="stylesheet" href="/css/pages/flexbox-challenge03/index.css">
+
+</head>
+<body>
+    <header class="padding-block-m">
+        <div class="[ wrapper ] [ flex ]">
+            <a class="logo" href="#"></a>
+            <nav class="[ nav ] [ flex ]" aria-label="Primary Navigation">
+                <ul class="nav__list nav__list--primary">
+                    <li class="nav__item"><a href="#" class="nav__link"  aria-current="page">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+                <ul  class="nav__list nav__list--secondary">
+                    <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+                    <li class="nav__item"><a href="#" class="[ nav__link nav__link--button ] [ pill ]">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero__title">
+        <div class="wrapper row">
+            <div class="hero__content">
+                <h1 id="hero__title">Responsive layouts don’t have to be a struggle</h1>
+                <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a href="#" class="btn">I want to learn</a>
+            </div>
+            <img
+                src="https://ik.imagekit.io/borladey/b2/tr:f-auto/hero-img.jpg"
+                class="hero__img"
+                style="--lqip: #dddddf"
+                width="386"
+                height="292"
+                alt="UX design sketches"
+            >
+        </div>
+    </section>
+
+    <main class="wrapper row">
+            <section class="[ primary-content ] [ flow ]">
+                <h2 class="primary-content__title">Quality designs made custom, on demand, just for you</h2>
+                <p class="primary-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p class="primary-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </section>
+            <aside class="[ sidebar benefits ] [ text-center ]">
+                <ul class="[ benefits__list ] [ flow ]">
+                    <li class="benefits__list__item">
+                        <h2 class="benefits__list__title">Cheap</h2>
+                        <p  class="benefits__list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </li>
+                    <li class="benefits__list__item">
+                        <h2 class="benefits__list__title">Quick</h2>
+                        <p  class="benefits__list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </li>
+                    <li class="benefits__list__item">
+                        <h2 class="benefits__list__title">Quality</h2>
+                        <p  class="benefits__list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </li>
+                </ul> 
+            </aside>
+    </main>
+</body>
+</html>

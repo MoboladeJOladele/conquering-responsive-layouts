@@ -18,21 +18,16 @@ body {
     margin-block-end: var(--space-2xl);
 }
 
-.container {
+.wrapper {
     inline-size: min(80%, 46.875rem);
-    margin-inline: auto;
+    padding: 0;
 }
 
 .intro {
-    background: #23424a;
+    background-color: #23424a;
     color: white;
-    padding-block: var(--space-2xl); 
     margin-block-end: var(--space-2xl); 
 } 
-
-h1, h2 {
-    margin-block-end: var(--space-xs);
-}
 
 .intro-content {
     inline-size: 50%;

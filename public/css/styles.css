@@ -1,0 +1,413 @@
+/* ---------- Box sizing ---------- */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+/* ---------- Lists ---------- */
+
+/* Only reset lists that explicitly remove default styling */
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+/* ---------- Scroll ---------- */
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* ---------- Reduced Motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+:root {
+  /* Fluid Type */
+  --step--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
+  --step--1: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  --step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --step-1: clamp(1.35rem, 1.2631rem + 0.3864vw, 1.5625rem);
+  --step-2: clamp(1.62rem, 1.4837rem + 0.6057vw, 1.9531rem);
+  --step-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
+  --step-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
+  --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+
+  /* Fluid Space */
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8494rem + 0.1136vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6108rem + 0.3409vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.1477rem + 0.4545vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2216rem + 0.6818vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.2955rem + 0.9091vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
+
+  /* Colors */
+  
+  
+  --font-body: sans-serif;
+  --lqip-fallback: transparent;
+}
+
+/* ---------- Base Typography ---------- */
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Headings ---------- */
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+h1   {
+    font-size: var(--step-4);
+}
+
+h2   {
+    font-size: var(--step-3);
+}
+
+h3   {
+    font-size: var(--step-2);
+}
+
+h4   {
+    font-size: var(--step-1);
+}
+
+small {
+    font-size: var(--step--1);
+}
+
+/* ---------- Paragraphs ---------- */
+
+p {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+}
+
+/* ---------- Body ---------- */
+
+body {
+    min-block-size: 100vh;
+    text-rendering: optimizeSpeed;
+}
+
+/* ---------- Media ---------- */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-inline-size: 100%;
+}
+
+img {
+    background-color: var(--lqip, var(--lqip-fallback));
+}
+
+/* ---------- Links ---------- */
+
+a {
+    transition: color 0.2s ease-in-out;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* ---------- Form Elements ---------- */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* ---------- Buttons ---------- */
+
+button {
+    cursor: pointer;
+}
+
+.flex,
+.inline-flex {
+  --gap: 1rem;
+  --direction: row;
+  --align: center;
+  --justify: flex-start;
+  --wrap: nowrap;
+
+  gap: var(--gap);
+  flex-direction: var(--direction);
+  align-items: var(--align);
+  justify-content: var(--justify);
+  flex-wrap: var(--wrap);
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.grid {
+  --gap: 1rem;
+  --grid-cols: auto;
+  --grid-rows: auto;
+
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: var(--grid-cols);
+  grid-template-rows: var(--grid-rows);
+}
+
+.grid > * {
+  --col-span: 1;
+  --row-span: 1;
+
+  grid-column: span var(--col-span);
+  grid-row: span var(--row-span);
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, var(--space-s));
+}
+
+.wrapper {
+    inline-size: min(100%, 60rem);
+    margin-inline: auto;
+    padding-inline: var(--space-s);
+}
+
+/* Border Radius */
+
+.rounded-sm { border-radius: 0.25rem; }
+
+.rounded    { border-radius: 0.5rem; }
+
+.rounded-lg { border-radius: 1rem; }
+
+.pill       { border-radius: 100vmax; }
+
+.circle     { border-radius: 50%; }
+
+/* Border Width */
+
+.border      { border-width: 1px; border-style: solid; }
+
+.border-2    { border-width: 2px; border-style: solid; }
+
+.border-none { border: none; }
+
+/* Border Style */
+
+.border-solid  { border-style: solid; }
+
+.border-dashed { border-style: dashed; }
+
+.border-dotted { border-style: dotted; }
+
+/* Individual Sides */
+
+.border-top    { border-top-width: 1px; border-top-style: solid; }
+
+.border-bottom { border-bottom-width: 1px; border-bottom-style: solid; }
+
+.border-left   { border-left-width: 1px; border-left-style: solid; }
+
+.border-right  { border-right-width: 1px; border-right-style: solid; }
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.sr-only {
+  position: absolute;
+  block-size: 1px;
+  inline-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Margin block (vertical) */
+
+.margin-block-3xs { margin-block: var(--space-3xs); }
+
+.margin-block-2xs { margin-block: var(--space-2xs); }
+
+.margin-block-xs  { margin-block: var(--space-xs); }
+
+.margin-block-s   { margin-block: var(--space-s); }
+
+.margin-block-m   { margin-block: var(--space-m); }
+
+.margin-block-l   { margin-block: var(--space-l); }
+
+.margin-block-xl  { margin-block: var(--space-xl); }
+
+.margin-block-2xl { margin-block: var(--space-2xl); }
+
+.margin-block-3xl { margin-block: var(--space-3xl); }
+
+/* Padding */
+
+.padding-3xs { padding: var(--space-3xs); }
+
+.padding-2xs { padding: var(--space-2xs); }
+
+.padding-xs  { padding: var(--space-xs); }
+
+.padding-s   { padding: var(--space-s); }
+
+.padding-m   { padding: var(--space-m); }
+
+.padding-l   { padding: var(--space-l); }
+
+.padding-xl  { padding: var(--space-xl); }
+
+.padding-2xl { padding: var(--space-2xl); }
+
+.padding-3xl { padding: var(--space-3xl); }
+
+/* Padding inline (horizontal) */
+
+.padding-inline-xs { padding-inline: var(--space-xs); }
+
+.padding-inline-s  { padding-inline: var(--space-s); }
+
+.padding-inline-m  { padding-inline: var(--space-m); }
+
+.padding-inline-l  { padding-inline: var(--space-l); }
+
+.padding-inline-xl  { padding-inline: var(--space-xl); }
+
+.padding-inline-2xl { padding-inline: var(--space-2xl); }
+
+.padding-inline-3xl { padding-inline: var(--space-3xl); }
+
+/* Padding block (vertical) */
+
+.padding-block-xs { padding-block: var(--space-xs); }
+
+.padding-block-s  { padding-block: var(--space-s); }
+
+.padding-block-m  { padding-block: var(--space-m); }
+
+.padding-block-l  { padding-block: var(--space-l); }
+
+.padding-block-xl  { padding-block: var(--space-xl); }
+
+.padding-block-2xl { padding-block: var(--space-2xl); }
+
+.padding-block-3xl { padding-block: var(--space-3xl); }
+
+/* Text Alignment */
+
+.text-left   { text-align: left; }
+
+.text-right  { text-align: right; }
+
+.text-center { text-align: center; }
+
+/* Text Transform */
+
+.lowercase  { text-transform: lowercase; }
+
+.uppercase  { text-transform: uppercase; }
+
+.capitalize { text-transform: capitalize; }
+
+/* Font Weight */
+
+.fw-light    { font-weight: 300; }
+
+.fw-regular  { font-weight: 400; }
+
+.fw-medium   { font-weight: 500; }
+
+.fw-semibold { font-weight: 600; }
+
+.fw-bold     { font-weight: 700; }
+
+/* Font Size */
+
+.fs-2xs  { font-size: var(--step--2); }
+
+.fs-xs   { font-size: var(--step--1); }
+
+.fs-base { font-size: var(--step-0); }
+
+.fs-md   { font-size: var(--step-1); }
+
+.fs-lg   { font-size: var(--step-2); }
+
+.fs-xl   { font-size: var(--step-3); }
+
+.fs-2xl  { font-size: var(--step-4); }
+
+.fs-3xl  { font-size: var(--step-5); }
+
+/* Font Style */
+
+.italic  { font-style: italic; }
+
+.no-italic { font-style: normal; }
+
+/* Text Decoration */
+
+.underline     { text-decoration: underline; }
+
+.no-underline  { text-decoration: none; }
+
+.line-through  { text-decoration: line-through; }

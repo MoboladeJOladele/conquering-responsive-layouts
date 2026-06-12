@@ -13,9 +13,32 @@ html {
 
 /* ---------- Lists ---------- */
 
+/* Only reset lists that explicitly remove default styling */
 ul,
 ol {
     list-style: none;
     padding: 0;
-    margin: 0;
+}
+
+/* ---------- Scroll ---------- */
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* ---------- Reduced Motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

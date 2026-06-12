@@ -1,0 +1,22 @@
+/* Border Radius */
+.rounded-sm { border-radius: 0.25rem; }
+.rounded    { border-radius: 0.5rem; }
+.rounded-lg { border-radius: 1rem; }
+.pill       { border-radius: 100vmax; }
+.circle     { border-radius: 50%; }
+
+/* Border Width */
+.border      { border-width: 1px; border-style: solid; }
+.border-2    { border-width: 2px; border-style: solid; }
+.border-none { border: none; }
+
+/* Border Style */
+.border-solid  { border-style: solid; }
+.border-dashed { border-style: dashed; }
+.border-dotted { border-style: dotted; }
+
+/* Individual Sides */
+.border-top    { border-top-width: 1px; border-top-style: solid; }
+.border-bottom { border-bottom-width: 1px; border-bottom-style: solid; }
+.border-left   { border-left-width: 1px; border-left-style: solid; }
+.border-right  { border-right-width: 1px; border-right-style: solid; }

@@ -12,24 +12,19 @@
  *
  */
 
-.container {
+.wrapper {
   background: #23424a;
   color: white;
 
   inline-size: 80%;
-  margin-inline: auto;
-
-  padding: var(--space-xl);
 }
 
 .intro-content {
+    --flow-space: var(--space-xs);
+    
     inline-size: 50%;
 }
 
 h1 {
     margin-block-end: var(--space-s);
-}
-
-p + p {
-    margin-block-start: var(--space-xs);
 }

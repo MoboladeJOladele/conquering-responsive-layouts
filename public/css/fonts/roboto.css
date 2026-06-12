@@ -16,7 +16,6 @@
         url('/assets/fonts/Roboto-Font/Roboto-Italic.woff') format('woff');
 }
 
-/*Change Default Font*/
 :root {
     --font-body: 'Roboto', sans-serif;
 }
