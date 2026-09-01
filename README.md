@@ -26,8 +26,8 @@ Throughout the challenge, I practiced:
 
 ### Day 1
 
-* 🔗 [Responsive Version](https://dancing-marshmallow-9098e8.netlify.app/challenge01/responsive-version.html)
-* 🔗 [Broken Version](https://dancing-marshmallow-9098e8.netlify.app/challenge01/broken-version.html)
+* 🔗 [Responsive Version](https://conquering-responsive-layouts.pages.dev/challenge01/responsive-version.html)
+* 🔗 [Broken Version](https://conquering-responsive-layouts.pages.dev/challenge01/broken-version.html)
 
 ---
 
